@@ -10,6 +10,7 @@ namespace ООП
 
             Renderer renderer = new Renderer();
             renderer.Render(player);
+            Console.ReadKey();
 
         }
     }
