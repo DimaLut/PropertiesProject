@@ -16,13 +16,13 @@ namespace ООП
 
     class Player
     {
-        public int X { get; }
-        public int Y { get; }
+        public int positionX { get; }
+        public int positionY { get; }
 
         public Player(int x, int y)
         {
-            X = x;
-            Y = y;
+            positionX = x;
+            positionY = y;
         }
     }
 
@@ -30,7 +30,7 @@ namespace ООП
     {
         public void Render(Player player)
         {
-            Console.SetCursorPosition(player.X, player.Y);
+            Console.SetCursorPosition(player.positionX, player.positionY);
             Console.Write('@');
         }
     }
